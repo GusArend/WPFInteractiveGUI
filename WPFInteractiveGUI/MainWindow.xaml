@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPFInteractiveGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFInteractiveGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="bNewPerson" Content="New Person" HorizontalAlignment="Left" Margin="512,100,0,0" VerticalAlignment="Top" Width="100" IsEnabled="True" Click="Button_Click"/>
+        <Button x:Name="bDeletePerson" Content="Delete Person" HorizontalAlignment="Left" Margin="512,150,0,0" VerticalAlignment="Top" Width="100" IsEnabled="False" Click="bDeletePerson_Click"/>
+        <Button x:Name="bUp" Content="Up" HorizontalAlignment="Left" Margin="512,200,0,0" VerticalAlignment="top" Width="100" IsEnabled="False" Click="bUp_Click"/>
+        <Button x:Name="bDown" Content="Down" HorizontalAlignment="Left" Margin="512,250,0,0" VerticalAlignment="Top" Width="100" IsEnabled="False" Click="bDown_Click"/>
+        <TextBox x:Name="tbFirstName" HorizontalAlignment="Left" Margin="300,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsEnabled="False" TextChanged="tbFirstName_TextChanged"/>
+        <TextBox x:Name="tbLastName" HorizontalAlignment="Left" Margin="300,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsEnabled="False" TextChanged="tbLastName_TextChanged"/>
+        <TextBox x:Name="tbAge" HorizontalAlignment="Left" Margin="300,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsEnabled="False" TextChanged="tbAge_TextChanged"/>
+        <TextBox x:Name="tbPhoneNo" HorizontalAlignment="Left" Margin="300,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsEnabled="False" TextChanged="tbPhoneNo_TextChanged"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="177,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="177,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="177,200,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telephone No." HorizontalAlignment="Left" Margin="177,250,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lPersonCount" Content="Person Count: 0" HorizontalAlignment="Left" Margin="177,50,0,0" VerticalAlignment="Top" />
+        <Label x:Name="lIndex" Content="Index -1" HorizontalAlignment="Left" Margin="323,50,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
